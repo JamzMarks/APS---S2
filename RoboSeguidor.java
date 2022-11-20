@@ -86,7 +86,8 @@ void loop(){
   if (DistanciaemCM <= 5) {// Se a distância lida pelo sensor for ou igual a 5 centimetros
     Serial.print("obstaculo")
   }
-  }else{ //FRENTE
+  }else{
+    //PARA
     if(!(VLE)&&!(VLD)){
 
       analogWrite (potencia_dir,0); //PARA     
@@ -94,6 +95,7 @@ void loop(){
       delay(500);
 
     }
+     //FRENTE
     if((VLE)&&(VLD)){
       analogWrite (potencia_dir,velocidade);    
       analogWrite (potencia_esq,velocidade); 
