@@ -34,6 +34,7 @@ void setup (){
 
   pinMode(SE, INPUT);
   pinMode(SD, INPUT);
+  delay(5000)
   
 }
 
